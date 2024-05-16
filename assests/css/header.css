@@ -1,0 +1,130 @@
+header {
+  width: 100%;
+  height: 10vh;
+  padding: 28px 8%;
+  background-color: var(--third-color);
+  position: sticky;
+  top: 0px;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo-nav {
+  font-size: 40px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+#ctn-search {
+  display: flex;
+}
+
+#ctn-search:hover {
+  transition: 0.2s;
+  border-bottom: 4px var(--primary-color) solid;
+  font-weight: 600;
+}
+
+#btn-nav {
+  background-color: transparent;
+  font-size: 16px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+#btn-nav:hover {
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+#arrow-nav {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#ul-nav {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  padding-right: 15px;
+}
+
+.li-nav a{
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.li-nav.active a{
+  transition: 0.2s;
+  font-weight: 600;
+  border-bottom: 4px var(--primary-color) solid;
+}
+
+#mobile-nav {
+  display: none;
+}
+
+#mobile-btn {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  #ul-nav {
+    display: none;
+  }
+  #mobile-btn {
+    display: block;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  #mobile-nav.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--third-color);
+    border-radius: 0px 0px 7px 7px;
+  }
+  #mobile-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0px;
+  }
+  #mobile-ul .mobile-li {
+    list-style: none;
+    text-align: center;
+  }
+  #mobile-ul .mobile-li:hover {
+    transition: 0.2s;
+    font-weight: 600;
+    border-bottom: 4px var(--primary-color) solid;
+  }
+  #mobile-ul .mobile-li a{
+    text-decoration: none;
+    color: #000;
+  }
+  #logo-nav {
+    padding-right: 63px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #logo-nav {
+    font-size: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #btn-nav {
+    display: none;
+  }
+}

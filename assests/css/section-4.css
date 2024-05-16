@@ -1,0 +1,12 @@
+#home-sec4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 54vh;
+  gap: 20px;
+}
+
+#text-sec4 p {
+  padding-top: 20px;
+}

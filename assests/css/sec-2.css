@@ -1,0 +1,135 @@
+.cards-home {
+  min-height: 160vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.card-sec3-home {
+  height: auto;
+  width: 100%;
+  background-color: rgb(225, 225, 225);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 18px;
+}
+
+.card-sec3-home div {
+  padding: 0px 10%;
+}
+
+.card-sec3-home p {
+  font-size: 18px;
+  padding-top: 20px;
+  color: var(--four-color);
+}
+
+.card-sec3-home span {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--four-color);
+  border-bottom: 3px solid var(--four-color);
+}
+
+.card-sec3-home img {
+  flex-wrap: wrap;
+  width: 50%
+}
+
+#card1-sec3-home img {
+  border-radius: 18px 0px 0px 18px;
+}
+
+#card2-sec3-home img {
+  border-radius: 0px 18px 18px 0px;
+}
+
+#card3-sec3-home img {
+  border-radius: 18px 0px 0px 18px;
+}
+
+@media screen and (max-width: 1250px) {
+  .cards-home {
+    min-height: 130vh;
+  }
+  .card-sec3-home p {
+    font-size: 16px;
+  }
+  
+  .card-sec3-home span {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .cards-home {
+    min-height: 120vh;
+  }
+  .card-sec3-home p {
+    font-size: 14px;
+  }
+  
+  .card-sec3-home span {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .card-sec3-home {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+  }
+  .card-sec3-home p {
+    font-size: 13px;
+  }
+  .card-sec3-home span {
+    font-size: 22px;
+  }
+  .card-sec3-home img {
+    width: 100%;
+    border-radius: 18px 18px;
+  }
+  .card-sec3-home div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25% 10%;
+  }
+
+  #card1-sec3-home img {
+    border-radius: 18px 0px 0px 18px;
+  }
+  
+  #card3-sec3-home img {
+    border-radius: 18px 0px 0px 18px;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  .card-sec3-home {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+  }
+  .card-sec3-home p {
+    font-size: 13px;
+  }
+  .card-sec3-home span {
+    font-size: 22px;
+  }
+  .card-sec3-home img {
+    width: 100%;
+    border-radius: 18px 18px;
+  }
+
+
+}
